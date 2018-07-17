@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChemSym</string>
+    <string name="result_text_default">Please focus the camera properly. (দয়া করে ক্যামেরাটি সঠিকভাবে ফোকাস করুন ।) </string>
+
+</resources>

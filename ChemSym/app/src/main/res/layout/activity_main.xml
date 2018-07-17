@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.chemsym.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Making Chemical Compatibility Check easy since 2018  "
+        android:textStyle="italic"
+        android:fontFamily="casual" />
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="320dp"
+          android:id="@+id/image_view"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="20dp"
+          />
+
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Snap"
+            android:id="@+id/cambutton1"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/result1"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/result_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/result2"
+            android:textSize="10sp"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="Powered by ARTIFEX IPSUM "
+            android:fontFamily="monospace"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
