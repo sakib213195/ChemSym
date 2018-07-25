@@ -45,6 +45,7 @@
             />
 
 
+
     <TextView
         android:layout_centerHorizontal="true"
         android:id="@+id/result1"
@@ -54,6 +55,18 @@
         android:text="@string/result_text_default"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/Process"
+            style="@style/CategoryStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"
+            android:background="#cdc9c9"
+            android:text="Process!"
+            android:textAlignment="center"
+            android:textColor="#06101b" />
+
+
 
         <TextView
             android:id="@+id/result2"

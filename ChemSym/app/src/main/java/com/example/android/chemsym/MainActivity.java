@@ -1,7 +1,9 @@
 package com.example.android.chemsym;
 
 import android.content.Intent;
+
 import android.graphics.drawable.Drawable;
+import android.media.FaceDetector;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -9,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +25,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 import 	java.util.Scanner;
+import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,9 +37,27 @@ static  final int CAM_REQUEST = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        TextView Process = (TextView) findViewById(R.id.Process);
+
+
+        Process.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                Intent Process = new Intent(MainActivity.this, Process.class);
+
+
+                startActivity(Process);
+            }
+        });
+
         button = (Button) findViewById(R.id.cambutton1);
         imageView = (ImageView) findViewById(R.id.image_view);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,11 +67,14 @@ static  final int CAM_REQUEST = 1;
                 startActivityForResult(camera_intent, CAM_REQUEST);
 
 
+
             }
         });
 
 
+
     }
+
 
     private File getFile()
     {
@@ -70,4 +96,10 @@ static  final int CAM_REQUEST = 1;
 
 
     }
+
+
+
+
+
+
 }
