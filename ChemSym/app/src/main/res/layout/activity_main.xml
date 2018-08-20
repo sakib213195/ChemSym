@@ -1,87 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.chemsym.MainActivity">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Making Chemical Compatibility Check easy since 2018  "
-        android:textStyle="italic"
-        android:fontFamily="casual" />
-
-
-      <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="320dp"
-          android:id="@+id/image_view"
-          android:layout_gravity="center_horizontal"
-          android:layout_marginTop="20dp"
-          />
-
-
+        android:layout_height="wrap_content">
 
 
         <Button
-            android:layout_width="200dp"
+            android:id="@+id/compare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Compare"
+            android:layout_marginLeft="100dp"
+            android:onClick="compare"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/flamamble"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/flammable"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="93dp"
+            />
+
+        <CheckBox
+            android:id="@+id/flammablecheck1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Snap"
-            android:id="@+id/cambutton1"
-            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/flamamble"
+            android:layout_marginTop="120dp"
+            />
+
+        <CheckBox
+            android:id="@+id/flammablecheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flammablecheck1"
+            android:layout_marginTop="120dp"
+            />
+
+        <ImageButton
+            android:id="@+id/nontoxicflammablegas"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/nonflammabletoxicgas"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/flamamble"
             />
 
 
 
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:id="@+id/result1"
-        android:textSize="20sp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="@string/result_text_default"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/nontoxicflammablegascheck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nontoxicflammablegas"
+            android:layout_marginTop="240dp"
+            />
 
-        <TextView
-            android:id="@+id/Process"
-            style="@style/CategoryStyle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="110dp"
-            android:background="#cdc9c9"
-            android:text="Process!"
-            android:textAlignment="center"
-            android:textColor="#06101b" />
+        <CheckBox
+            android:id="@+id/nontoxicflammablegascheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
+            android:layout_marginTop="240dp"
+            />
 
 
+        <ImageButton
+            android:id="@+id/toxicgas"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/toxic_gas"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/nontoxicflammablegas"
+            />
 
-        <TextView
-            android:id="@+id/result2"
-            android:textSize="10sp"
-            android:gravity="right"
-            android:layout_marginTop="10dp"
-            android:text="Powered by ARTIFEX IPSUM "
-            android:fontFamily="monospace"
-            android:textStyle="italic"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/toxicgascheck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/toxicgas"
+            android:layout_marginTop="360dp"
+            />
 
-        </LinearLayout>
+        <CheckBox
+            android:id="@+id/toxicgascheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
+            android:layout_marginTop="360dp"
+            />
 
+        <ImageButton
+            android:id="@+id/oxidising_gas"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/oxising_gas"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/toxicgas"
+            />
 
+        <CheckBox
+            android:id="@+id/oxidising_gascheck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/oxidising_gas"
+            android:layout_marginTop="480dp"
+            />
+
+        <CheckBox
+            android:id="@+id/oxidising_gascheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/oxidising_gascheck1"
+            android:layout_marginTop="480dp"
+            />
 
 
     </RelativeLayout>

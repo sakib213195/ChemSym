@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.chemsym">
 
-    <uses-feature android:name="android.hardware.camera2" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,12 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="barcode" />
-
-        <activity android:name=".Process"></activity>
+        <activity android:name=".flammablegas" />
+        <activity android:name=".nonflamamblenontoxicgas" />
+        <activity android:name=".toxicgas" />
+        <activity android:name=".OK" />
+        <activity android:name=".Isolate" />
+        <activity android:name=".segregate3" />
+        <activity android:name=".segregate5" />
+        <activity android:name=".maynot" />
+        <activity android:name=".error" />
+        <activity android:name=".oxidisinggas"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.chemsym.segregate3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/colored"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:background="#FFD600"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colored"
+            android:text="SEGREGATE AT LEAST 3m"
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
