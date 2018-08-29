@@ -10,6 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Choice"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Choice"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="180dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+
+            />
+
 
         <Button
             android:id="@+id/compare"
@@ -31,21 +53,88 @@
             android:layout_marginTop="93dp"
             />
 
-        <CheckBox
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
             android:id="@+id/flammablecheck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            />
+
+            <RadioButton
+                android:id="@+id/nontoxicflammablegascheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <RadioButton
+                android:id="@+id/toxicgascheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <RadioButton
+                android:id="@+id/oxidising_gascheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="80dp"
+                />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/flammablecheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/flamamble"
             android:layout_marginTop="120dp"
+            android:layout_marginLeft="190dp"
             />
 
-        <CheckBox
-            android:id="@+id/flammablecheck2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/flammablecheck1"
-            android:layout_marginTop="120dp"
-            />
+            <RadioButton
+                android:id="@+id/nontoxicflammablegascheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="190dp"
+                />
+
+            <RadioButton
+                android:id="@+id/toxicgascheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="190dp"
+                />
+
+            <RadioButton
+                android:id="@+id/oxidising_gascheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/oxidising_gascheck1"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="190dp"
+                />
+
+        </RadioGroup>
+
 
         <ImageButton
             android:id="@+id/nontoxicflammablegas"
@@ -59,23 +148,6 @@
 
 
 
-        <CheckBox
-            android:id="@+id/nontoxicflammablegascheck1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/nontoxicflammablegas"
-            android:layout_marginTop="240dp"
-            />
-
-        <CheckBox
-            android:id="@+id/nontoxicflammablegascheck2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
-            android:layout_marginTop="240dp"
-            />
-
-
         <ImageButton
             android:id="@+id/toxicgas"
             android:layout_width="88dp"
@@ -86,21 +158,9 @@
             android:layout_below="@+id/nontoxicflammablegas"
             />
 
-        <CheckBox
-            android:id="@+id/toxicgascheck1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/toxicgas"
-            android:layout_marginTop="360dp"
-            />
 
-        <CheckBox
-            android:id="@+id/toxicgascheck2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/nontoxicflammablegascheck1"
-            android:layout_marginTop="360dp"
-            />
+
+
 
         <ImageButton
             android:id="@+id/oxidising_gas"
@@ -112,21 +172,9 @@
             android:layout_below="@+id/toxicgas"
             />
 
-        <CheckBox
-            android:id="@+id/oxidising_gascheck1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/oxidising_gas"
-            android:layout_marginTop="480dp"
-            />
 
-        <CheckBox
-            android:id="@+id/oxidising_gascheck2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/oxidising_gascheck1"
-            android:layout_marginTop="480dp"
-            />
+
+
 
 
     </RelativeLayout>

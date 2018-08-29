@@ -1,7 +1,9 @@
 package com.example.android.chemsym;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,10 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent flammable = new Intent(MainActivity.this, flammablegas.class);
-
-
-                startActivity(flammable);
+                Toast.makeText(getApplicationContext(),"Flammable is a property of a material relating how easily the material ignites or sustains a combustion reaction.",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent nontoxicflammablegas = new Intent(MainActivity.this, nonflamamblenontoxicgas.class);
-
-
-                startActivity(nontoxicflammablegas);
+                Toast.makeText(getApplicationContext(),"Gases that can displace atmospheric oxygen causing asphyxiation. These materials are often storedunder pressure causing an additional hazard. Examples include nitrogen, carbondioxide and oxygen.",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -53,10 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent toxicgas = new Intent(MainActivity.this, toxicgas.class);
-
-
-                startActivity(toxicgas);
+                Toast.makeText(getApplicationContext(),"Gases that are liable to cause death if inhaled, for example, chlorine gas and anhydrous ammonia.",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -67,25 +61,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent oxidising_gas = new Intent(MainActivity.this, oxidisinggas.class);
 
 
-                startActivity(oxidising_gas);
+                Toast.makeText(getApplicationContext(),"Any gas which may, generally by providing oxygen, cause or contribute to the combustion of other material more than air does.",Toast.LENGTH_SHORT).show();
+
+
+
             }
         });
+
 
     }
 
     public void compare (View view){
 
-        CheckBox flammablecheck1 = (CheckBox) findViewById(R.id.flammablecheck1);
-        CheckBox flammablecheck2 = (CheckBox) findViewById(R.id.flammablecheck2);
-        CheckBox nontoxicflammablegascheck1 = (CheckBox) findViewById(R.id.nontoxicflammablegascheck1);
-        CheckBox nontoxicflammablegascheck2 = (CheckBox) findViewById(R.id.nontoxicflammablegascheck2);
-        CheckBox toxicgascheck1 = (CheckBox) findViewById(R.id.toxicgascheck1);
-        CheckBox toxicgascheck2 = (CheckBox) findViewById(R.id.toxicgascheck2);
-        CheckBox oxidising_gascheck1 = (CheckBox) findViewById(R.id.oxidising_gascheck1);
-        CheckBox oxidising_gascheck2 = (CheckBox) findViewById(R.id.oxidising_gascheck2);
+        RadioButton flammablecheck1 = (RadioButton) findViewById(R.id.flammablecheck1);
+        RadioButton flammablecheck2 = (RadioButton) findViewById(R.id.flammablecheck2);
+        RadioButton nontoxicflammablegascheck1 = (RadioButton) findViewById(R.id.nontoxicflammablegascheck1);
+        RadioButton nontoxicflammablegascheck2 = (RadioButton) findViewById(R.id.nontoxicflammablegascheck2);
+        RadioButton toxicgascheck1 = (RadioButton) findViewById(R.id.toxicgascheck1);
+        RadioButton toxicgascheck2 = (RadioButton) findViewById(R.id.toxicgascheck2);
+        RadioButton oxidising_gascheck1 = (RadioButton) findViewById(R.id.oxidising_gascheck1);
+        RadioButton oxidising_gascheck2 = (RadioButton) findViewById(R.id.oxidising_gascheck2);
 
         boolean hasflammablecheck1 = flammablecheck1.isChecked();
         boolean hasflammablecheck2 = flammablecheck2.isChecked();
