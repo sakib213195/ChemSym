@@ -4,29 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.chemsym.OK">
+    tools:context="com.example.android.chemsym.keepapart">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <TextView
+        <TextView
 
-        android:id="@+id/colored"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="160dp"
-        android:background="#76FF03"
+            android:id="@+id/colored"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:background="#FFD600"
 
-        />
+            />
 
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/colored"
-            android:text="OK TO STORE TOGETHER"
+            android:text="KEEP APART"
             android:textStyle="bold"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="140dp"
 
             />
 
@@ -41,6 +41,8 @@
             android:onClick="onClick"
 
             />
+
+
 
     </RelativeLayout>
 

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class maynot extends AppCompatActivity {
+public class keepapart extends AppCompatActivity {
 
     MediaPlayer mp;
     Button playBtn;
@@ -14,11 +14,10 @@ public class maynot extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maynot);
+        setContentView(R.layout.activity_keepapart);
 
         playBtn = (Button) findViewById(R.id.playBtn);
-        mp = MediaPlayer.create(this, R.raw.voicemaynot);
-
+        mp = MediaPlayer.create(this, R.raw.voicekeepapart);
     }
 
     public void onClick(View view) {

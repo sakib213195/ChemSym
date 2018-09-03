@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.chemsym">
 
-    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +23,7 @@
         <activity android:name=".segregate3" />
         <activity android:name=".segregate5" />
         <activity android:name=".maynot" />
-        <activity android:name=".error" />
+        <activity android:name=".keepapart"></activity>
     </application>
 
 </manifest>

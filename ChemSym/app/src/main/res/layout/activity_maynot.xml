@@ -24,19 +24,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/colored"
-            android:text="______________________________________________________"
             android:textStyle="bold"
 
 
             />
 
         <TextView
+            android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/borderwhite"
             android:text="MAY NOT BE COMPATIBLE CHECK MSDS AND NOTES"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/playBtn"
+            android:background="@drawable/play"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="146dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
 
             />
 
